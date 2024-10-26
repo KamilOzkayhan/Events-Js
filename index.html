@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Events</title>
+</head>
+<body onload="doSomething()">
+    
+   
+    <button onclick="show();"> Onclick Event </button>
+
+    <p id="myElement"></p>
+
+    <input type="text" id="name" onchange="change()">
+
+<br>
+<br>
+
+    <button id="myButton">addEventListener Click</button>
+
+    <h2 onmouseover="changeColor(this)" onmouseout="resetColor(this)" class="hover-effect">Put the mouse on me</h2>
+
+    <button
+        onmousedown="mouseDown()"
+        onmouseup="mouseUp()">
+        Click me
+    </button>
+
+    <p id="status"> Waiting respond... </p>
+
+    <label for="inputBox"> Write your name:</label>
+    <input type="text" id="inputBox" onblur="handleBlur()">
+
+    <h1>onfocus</h1>
+    <input type="text" id="inputField" onfocus="handleFocus()">
+    <p id="message"></p>
+
+    <script src="./index.js" ></script>
+
+</body>
+</html>
